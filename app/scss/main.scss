@@ -1,0 +1,11 @@
+@import "variables"; //пишем переменные
+@import "mixins"; 
+
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты
+
+//подключаем основные стили сайта(блоки)
+@import "blocks/wrapper";
+@import "blocks/container";
+@import "blocks/animal";
+@import "blocks/btn";

@@ -1,0 +1,62 @@
+.animal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &--none{
+        display: none;
+    }
+    &__head{
+        position: relative;
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        object-position: 65%;
+        object-fit: cover;
+        border-radius: 8px 0 0 8px;
+    }
+    &__name{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 8px 0 0;
+        padding: 8px 16px;
+        background-color: rgba(#000, .5);
+        color: #fff;
+        @include font(16px, 24px, 500);
+    }
+    &__awards{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+    &__award{
+        margin-bottom: 8px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    &__award-img{
+        margin: 4px;
+    }
+    &__footer{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 0 8px 8px 0;
+        // height: calc(100% - 240px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__desc{
+        @include font(16px, 24px);
+        color: #000;
+        margin-bottom: 24px;
+
+    }
+    &__link{
+        margin-top: auto;
+
+    }
+}
