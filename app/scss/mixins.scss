@@ -1,3 +1,18 @@
 @mixin font($font-size, $line-height, $weight: null, $font-family: $main-font){
     font: $weight #{$font-size}/#{$line-height} $font-family;
 }
+@mixin desktop{
+    @media (max-width: $desktop){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: $tablet){
+        @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content;
+    }
+}
